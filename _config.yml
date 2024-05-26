@@ -1,0 +1,13 @@
+title: Cherry Blossom
+description: A theme for Jekyll inspired by Cactus Dark for Hexo.
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+sass:
+  style: compressed

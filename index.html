@@ -1,0 +1,32 @@
+---
+title: Cherry Blossom
+layout: default
+---
+
+<section id="about">
+    <p>
+        Hi, I’m a theme for the
+        <a href="https://jekyllrb.com">Jekyll</a>
+        static site generator, inspired by
+        <a href="https://probberechts.github.io/hexo-theme-cactus/cactus-dark/public/">Cactus Dark</a>. I’m particularly
+        great for a personal web page with a simple blog. In this
+        paragraph, you can provide some information about yourself. Below, your most
+        recent or highlighted writings and projects are listed.
+    </p>
+
+    <p id="contact">
+        Find me on
+        {% for item in site.data.contact %}
+            <a class="icon" target="_blank" rel="noopener" href="{{ item.link }}">
+                <i class="{{ item.class }}"></i>
+            </a>    
+
+            {% assign secondlast = forloop.length | minus: 1 %}
+
+            {% if forloop.index < secondlast %}, 
+            {% elsif forloop.index == secondlast %}and
+            {% else %}.
+            {% endif %}
+        {% endfor %}
+    </p>
+</section>

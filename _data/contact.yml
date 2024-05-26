@@ -1,0 +1,11 @@
+- name: Github
+  class: fab fa-github
+  link: https://github.com/shirsakm
+
+- name: Linked In
+  class: fab fa-linkedin
+  link: https://www.linkedin.com/in/shirsakm/
+
+- name: Mail
+  class: fas fa-envelope
+  link: mailto:sh1rsak@proton.me

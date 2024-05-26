@@ -1,0 +1,112 @@
+@import 'fonts';
+@import 'external/font-awesome';
+
+$primary: #c9cacc;
+$background: #1d1f21;
+$accent: #ffa9c0;
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0%;
+    color: $primary;
+    background-color: $background;
+    font-family: 'Meslo LG', monospace;
+}
+
+body {
+    max-width: 48rem;
+    text-rendering: geometricPrecision;
+    line-height: 1.75;
+    overflow-wrap: break-word;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body a {
+    color: $primary;
+}
+
+header {
+    width: 100%;
+    margin-left: 1rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+header div:last-child {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+}
+
+header img:hover {
+    -webkit-filter: saturate(130%);
+}
+
+.logo {
+    height: 50px;
+}
+
+.title {
+    font-family: 'Meslo LG Bold', 'Meslo LG', monospace;
+    font-size: 1.5rem;
+}
+
+.nav {
+    list-style-type: none;
+    font-size: 0.8rem;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li {
+    display: inline-block;
+    padding-right: 18px;
+    margin-right: 9.666665px;
+    border-right: 1px dotted $accent;
+}
+
+.nav li:last-child {
+    margin-right: 0;
+    border-right: 0;
+}
+
+.nav li:hover {
+    -webkit-filter: brightness(80%);
+}
+
+.nav a {
+    text-decoration: none;
+    background: none;
+    color: $accent;
+}
+
+#about {
+    font-size: 14px;
+}
+
+#about p:first-child {
+    hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    text-align: justify;
+}
+
+#contact a i {
+    margin: 0;
+    padding: 0;
+}
+
+.icon {
+    text-decoration: none;
+}
