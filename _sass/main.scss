@@ -214,8 +214,46 @@ footer .nav a {
     font-size: 10px;
 }
 
-@media (min-width: 480) {
+@media (max-width: 480px) {
     footer .nav {
         visibility: collapse;
+    }
+}
+
+@media (max-width: 400px) {
+    #about {
+        font-size: 12px;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .icon i {
+        font-size: 12px;
+    }
+
+    .heading {
+        font-size: 1rem;
+    }
+
+    #post-list {
+        font-size: 12px;
+    }
+
+    #project-list li a {
+        font-size: 12px;
+    }
+
+    #project-list li p {
+        font-size: 12px;
+    }
+
+    .nav {
+        font-size: 0.75rem;
+    }
+
+    .logo {
+        width: 40px;
     }
 }
