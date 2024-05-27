@@ -213,3 +213,9 @@ footer .nav a {
 #copyright {
     font-size: 10px;
 }
+
+@media (min-width: 480) {
+    footer .nav {
+        visibility: collapse;
+    }
+}
