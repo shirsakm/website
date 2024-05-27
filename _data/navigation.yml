@@ -4,8 +4,5 @@
 - name: About
   link: /about/
 
-- name: Writing
-  link: /archive/
-
 - name: Projects
   link: /projects/
