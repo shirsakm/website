@@ -60,7 +60,7 @@ header img:hover {
 }
 
 .logo {
-    height: 50px;
+    width: 50px;
 }
 
 .title {
@@ -169,11 +169,6 @@ header img:hover {
         padding-right: 3%;
     }
 }
-
-#post-list li a:hover {
-    color: $accent;
-}
-
 
 .date {
     color: $grey;

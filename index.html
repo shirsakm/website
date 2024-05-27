@@ -5,13 +5,16 @@ layout: default
 
 <section id="about">
     <p>
-        Hi, I’m a theme for the
-        <a href="https://jekyllrb.com">Jekyll</a>
-        static site generator, inspired by
-        <a href="https://probberechts.github.io/hexo-theme-cactus/cactus-dark/public/">Cactus Dark</a>.
-        I’m particularly great for a personal web page with a simple blog. In this
-        paragraph, you can provide some information about yourself. Below, your most
-        recent or highlighted writings and projects are listed.
+        Hello! I'm a freelance software developer from India,
+        passionately blending my life as a full-time student and JEE aspirant.
+        I specialize in full-stack web development and Python scripting,
+        adept in using a diverse range of tools and technologies such as Jekyll,
+        Flask, and Tkinter. Alongside my coding journey, I'm an avid chess player,
+        proud to have competed in the 26th National School Games, India.
+    </p>
+
+    <p>
+        Let's create something remarkable together!
     </p>
 
     <p id="contact">
@@ -33,16 +36,14 @@ layout: default
 
 <div class="padding"></div>
 
-<section id="writing">
-    <a class="heading" href="/archive/">Writing</a>
+<section id="achievements">
+    <a class="heading" href="/achievements/">Achievements</a>
     <ul id="post-list">
-        {% for item in site.data.archive %}
+        {% for item in site.data.achievements %}
             <li>
                 <div class="date"> {{ item.date }} </div>
                 
-                <a href="{{ item.link }}">
-                    {{ item.title }}
-                </a>
+                {{ item.title }}
             </li>
         {% endfor %}
     </ul>
