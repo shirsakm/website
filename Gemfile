@@ -13,4 +13,5 @@ gem "json", "~> 2.5"
 group :jekyll_plugins do
     gem "jekyll-sitemap" # generates sitemap.xml
     gem "jekyll-seo-tag" # adds SEO tags to site head
+    gem "jekyll-redirect-from" # adds redirects to pages
 end
