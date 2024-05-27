@@ -8,8 +8,8 @@ layout: default
         Hi, I’m a theme for the
         <a href="https://jekyllrb.com">Jekyll</a>
         static site generator, inspired by
-        <a href="https://probberechts.github.io/hexo-theme-cactus/cactus-dark/public/">Cactus Dark</a>. I’m particularly
-        great for a personal web page with a simple blog. In this
+        <a href="https://probberechts.github.io/hexo-theme-cactus/cactus-dark/public/">Cactus Dark</a>.
+        I’m particularly great for a personal web page with a simple blog. In this
         paragraph, you can provide some information about yourself. Below, your most
         recent or highlighted writings and projects are listed.
     </p>
@@ -24,9 +24,42 @@ layout: default
             {% assign secondlast = forloop.length | minus: 1 %}
 
             {% if forloop.index < secondlast %}, 
-            {% elsif forloop.index == secondlast %}and
+            {% elsif forloop.index == secondlast %} &nbsp;and
             {% else %}.
             {% endif %}
         {% endfor %}
     </p>
+</section>
+
+<div class="padding"></div>
+
+<section id="writing">
+    <a class="heading" href="/archive/">Writing</a>
+    <ul id="post-list">
+        {% for item in site.data.archive %}
+            <li>
+                <div class="date"> {{ item.date }} </div>
+                
+                <a href="{{ item.link }}">
+                    {{ item.title }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</section>
+
+<div class="padding"></div>
+
+<section class="projects">
+    <a class="heading" href="/projects/">Projects</a>
+    <ul id="project-list">
+        {% for item in site.data.projects %}
+            <li>
+                <a href="{{ item.link }}">
+                    {{ item.name }}
+                </a>
+                <p>: {{ item.description }} </p>
+            </li>
+        {% endfor %}
+    </ul>
 </section>

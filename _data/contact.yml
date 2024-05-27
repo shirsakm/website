@@ -2,6 +2,10 @@
   class: fab fa-github
   link: https://github.com/shirsakm
 
+- name: Instagram
+  class: fab fa-instagram
+  link: https://instagram.com/sh1rsak
+
 - name: Linked In
   class: fab fa-linkedin
   link: https://www.linkedin.com/in/shirsakm/

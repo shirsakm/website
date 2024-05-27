@@ -30,6 +30,10 @@ body {
     margin-right: auto;
 }
 
+body ul {
+    line-height: 2.00;
+}
+
 body a {
     color: $primary;
 }
@@ -40,6 +44,7 @@ header {
     margin-bottom: 3rem;
     display: flex;
     justify-content: flex-start;
+    align-items: flex-end;
 }
 
 header div:last-child {
@@ -57,13 +62,15 @@ header img:hover {
 }
 
 .title {
-    font-family: 'Meslo LG Bold', 'Meslo LG', monospace;
+    font-family: 'Meslo LG', monospace;
+    font-weight: 700;
     font-size: 1.5rem;
 }
 
 .nav {
     list-style-type: none;
     font-size: 0.8rem;
+    line-height: 1.75;
     padding: 0;
     margin: 0;
 }
@@ -102,11 +109,74 @@ header img:hover {
     text-align: justify;
 }
 
-#contact a i {
-    margin: 0;
+.icon {
+    font-size: 0;
+    text-decoration: none;
+}
+
+.icon i {
+    font-size: 14px;
+}
+
+.heading {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: $accent;
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+#project-list {
+    list-style-type: none;    
+    font-size: 14px;
     padding: 0;
 }
 
-.icon {
-    text-decoration: none;
+#project-list li {
+    font-size: 0;
+    margin-bottom: 5px;
+}
+
+#project-list li p {
+    font-size: 14px;
+    display: inline;
+}
+
+#project-list li a {
+    font-size: 14px;
+    display: inline-block;
+}
+
+#project-list li a:hover {
+    color: $accent;
+}
+
+#post-list {
+    list-style-type: none;    
+    font-size: 14px;
+    padding: 0;
+}
+
+@media (min-width: 480px) {
+    #post-list li {
+        display: flex;
+        margin-bottom: 5px;
+    }
+
+    #post-list li div {
+        padding-right: 3%;
+    }
+}
+
+#post-list li a:hover {
+    color: $accent;
+}
+
+
+.date {
+    color: grey;
+}
+
+.padding {
+    padding: 1.5rem;
 }
