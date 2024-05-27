@@ -4,7 +4,7 @@
 $primary: #c9cacc;
 $background: #1d1f21;
 $accent: #ffa9c0;
-
+$grey: #646464;
 
 * {
     box-sizing: border-box;
@@ -19,11 +19,13 @@ html {
 
 body {
     max-width: 48rem;
+    display: flex;
+    flex-direction: column;
     text-rendering: geometricPrecision;
     line-height: 1.75;
     overflow-wrap: break-word;
     padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-bottom: 1rem;
     padding-left: 2rem;
     padding-right: 2rem;
     margin-left: auto;
@@ -174,9 +176,45 @@ header img:hover {
 
 
 .date {
-    color: grey;
+    color: $grey;
 }
 
 .padding {
     padding: 1.5rem;
+}
+
+footer {
+    display: flex;
+    height: 12px;
+    color: $grey;
+    padding-top: 4rem;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+footer .nav li {
+    display: inline-block;
+    font-size: 10px;
+    padding-right: 18px;
+    margin-right: 9.666665px;
+    border-right: 1px solid $grey;
+}
+
+footer .nav li:last-child {
+    margin-right: 0;
+    border-right: 0;
+}
+
+footer .nav li:hover {
+    -webkit-filter: brightness(120%);
+}
+
+footer .nav a {
+    text-decoration: none;
+    background: none;
+    color: $grey;
+}
+
+#copyright {
+    font-size: 10px;
 }
