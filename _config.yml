@@ -6,6 +6,9 @@ plugins:
   - jekyll-seo-tag
   - jekyll-redirect-from
 
+include:
+  - _pages
+
 exclude:
   - Gemfile
   - Gemfile.lock
