@@ -1,6 +1,6 @@
 - name: Cherry Blossom
   description: A Cactus Dark inspired Jekyll theme.
-  link: cherry-blossom.pages.dev
+  link: https://cherry-blossom.pages.dev
 
 - name: Maspas
   description: A password manager written using Tkinter.
