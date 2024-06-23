@@ -1,8 +1,8 @@
 - name: Home
   link: /
 
+- name: Blog
+  link: /blog
+
 - name: About
   link: /about
-
-- name: Projects
-  link: https://github.com/shirsakm?tab=repositories

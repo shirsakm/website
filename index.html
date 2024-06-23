@@ -1,10 +1,17 @@
 ---
 title: Home
-layout: home
+layout: default
+root: .
 permalink: /
 redirect_from:
     - /home
 ---
+
+{% for post in site.posts %}
+    <li>
+        <a href="{{ post.url }}"> {{ post.title }} </a>
+    </li>
+{% endfor %}
 
 <section id="about">
     <p>

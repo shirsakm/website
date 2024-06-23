@@ -30,6 +30,7 @@ body {
     padding-right: 2rem;
     margin-left: auto;
     margin-right: auto;
+    font-size: 14px;
 }
 
 body ul {
@@ -277,4 +278,9 @@ footer .nav a {
     .logo {
         width: 40px;
     }
+}
+
+#post-subtitle {
+    display: flex;
+    justify-content: space-between;
 }

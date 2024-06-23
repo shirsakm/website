@@ -1,0 +1,31 @@
+---
+title: Blog
+layout: default
+root: ./..
+permalink: /blog
+---
+
+<style>
+    ul {
+
+    }
+</style>
+
+<h3>
+    Shirsak's Blog
+</h3>
+
+<p>
+    Find a collection of my thoughts, experiences, and learnings below. 
+    I hope you enjoy reading them as much as I enjoyed writing them!
+</p>
+
+<ul>
+    {% for post in site.posts %}
+        <li>
+            <a href="{{ post.url }}"> {{ post.title }} </a>
+
+            <p> {{ post.excerpt }} </p>
+        </li>
+    {% endfor %}
+</ul>
