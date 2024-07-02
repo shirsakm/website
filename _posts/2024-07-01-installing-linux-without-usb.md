@@ -102,11 +102,11 @@ $ sudo umount /mnt
 
 1. The first step here, is to access the _Change Boot Order_ menu. When your computer is booting, a key on your keyboard needs to be pressed. The particular key entirely depends on the manufactuer of your system, and will require research on your part to find, but you can find some common keys in [this article by HP](https://www.hp.com/us-en/shop/tech-takes/how-to-enter-bios-setup-windows-pcs). On HP Notebooks, press `Esc` followed by `F9`, this will bring you to the menu. Here select the `Boot from EFI partition` option.
 
-2. Your system should now boot into a boot manager, which will be `grub` for most distributions, but is `systemd-boot` for EndeavourOS. Here, press `e` and you will have the option to edit the command. **Replace the name of the Linux distribution with the name of the partition you created.** For EndeavourOS,we are looking to edit the `archisolabel` variable.
+2. Your system should now boot into a boot manager, which will be `grub` for most distributions, but is `systemd-boot` for EndeavourOS. Here, press `e` and you will have the option to edit the command. **Replace the name of the Linux distribution with the name of the partition you created.** For EndeavourOS, we are looking to edit the `archisolabel` variable.
 
 ### Installing EndeavourOS
 
-You should have booted into a live session of the Linux distribution of your choice. From tis point forth, please follow the installation instructions provided by your Linux distribution Wiki. If no instructions are provided, you can still try to follow along, as the main issue is likely to be in making partitions, but I will be continuing with EndeavourOS, which already has a very intuitive installer.
+You should have booted into a live session of the Linux distribution of your choice. From this point forth, please follow the installation instructions provided by your Linux distribution Wiki. If no instructions are provided, you can still try to follow along, as the main issue is likely to be in making partitions, but I will be continuing with EndeavourOS, which already has a very intuitive installer.
 
 1. Run _Update Mirrors (Arch, reflector-simple)_ and _Update Mirrors (EndeavourOS)_, to update the mirrorlist for Arch Linux, as well EndeavourOS packages. While this step is optional, it is highly recommended if you want an online install.
 
