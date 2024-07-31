@@ -100,7 +100,7 @@ $ sudo umount /mnt
 
 ### Booting into the live Linux distribution
 
-1. The first step here, is to access the _Change Boot Order_ menu. When your computer is booting, a key on your keyboard needs to be pressed. The particular key entirely depends on the manufactuer of your system, and will require research on your part to find, but you can find some common keys in [this article by HP](https://www.hp.com/us-en/shop/tech-takes/how-to-enter-bios-setup-windows-pcs). On HP Notebooks, press `Esc` followed by `F9`, this will bring you to the menu. Here select the `Boot from EFI partition` option.
+1. The first step here, is to access the _Change Boot Order_ menu. When your computer is booting, a key on your keyboard needs to be pressed. The particular key entirely depends on the manufactuer of your system, and will require research on your part to find, but you can find some common keys in [this article by HP](https://www.hp.com/us-en/shop/tech-takes/how-to-enter-bios-setup-windows-pcs). On HP Notebooks, press `Esc` followed by `F9`, this will bring you to the menu. Here select the _Boot from EFI partition_ option.
 
 2. Your system should now boot into a boot manager, which will be `grub` for most distributions, but is `systemd-boot` for EndeavourOS. Here, press `e` and you will have the option to edit the command. **Replace the name of the Linux distribution with the name of the partition you created.** For EndeavourOS, we are looking to edit the `archisolabel` variable.
 

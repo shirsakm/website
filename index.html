@@ -7,12 +7,6 @@ redirect_from:
     - /home
 ---
 
-{% for post in site.posts %}
-    <li>
-        <a href="{{ post.url }}"> {{ post.title }} </a>
-    </li>
-{% endfor %}
-
 <section id="about">
     <p>
         Hello! I'm a freelance software developer from India,
@@ -66,10 +60,10 @@ redirect_from:
     <ul id="project-list">
         {% for item in site.data.projects %}
             <li>
-                <a href="{{ item.link }}">
+                <a href="{{ item.link }}" class="project-link">
                     {{ item.name }}
                 </a>
-                <p>: {{ item.description }} </p>
+                <p> {{ item.description }} </p>
             </li>
         {% endfor %}
     </ul>

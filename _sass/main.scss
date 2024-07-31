@@ -14,7 +14,7 @@ html {
     margin: 0%;
     color: $primary;
     background-color: $background;
-    font-family: 'Meslo LG', monospace;
+    font-family: 'Roboto Slab', 'Meslo LG', monospace;
 }
 
 body {
@@ -66,7 +66,7 @@ header img:hover {
 }
 
 .title {
-    font-family: 'Meslo LG', monospace;
+    font-family: Ogg, 'Meslo LG', monospace;
     font-weight: 700;
     font-size: 1.5rem;
 }
@@ -138,8 +138,9 @@ header img:hover {
 }
 
 .heading {
+    font-family: Ogg, 'Meslo LG', monospace;
     font-size: 1.2rem;
-    font-weight: 700;
+    font-weight: bold;
     color: $accent;
     text-decoration: none;
     margin-bottom: 1rem;
@@ -182,13 +183,24 @@ header img:hover {
         margin-bottom: 5px;
     }
 
-    #post-list li div {
+    .date {
+        padding-right: 3%;
+    }
+
+    .project-link {
         padding-right: 3%;
     }
 }
 
 .date {
+    font-family: 'Meslo LG', monospace;
     color: $grey;
+}
+
+.project-link {
+    font-family: 'Meslo LG', monospace;
+    color: $grey;
+    text-decoration: none;
 }
 
 .padding {

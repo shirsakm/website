@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
 @font-face {
     font-family: 'Meslo LG';
     src: url('/assets/fonts/MesloLG/MesloLGMDZ-Regular.ttf') format('truetype');
@@ -8,4 +12,50 @@
     src: url('/assets/fonts/MesloLG/MesloLGMDZ-Bold.ttf') format('truetype');
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+// OGG
+@font-face {
+    font-family: Ogg;
+    src: url('/assets/fonts/ogg/Ogg-Regular-BF646c18fc465e5.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Ogg;
+    src: url('/assets/fonts/ogg/Ogg-Bold-BF646c18fc530f4.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Ogg;
+    src: url('/assets/fonts/ogg/Ogg-RegularItalic-BF646c18fc4f575.ttf') format('truetype');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Nordin';
+    src: url('/assets/fonts/nordin/Nordin\ Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('/assets/fonts/Proxima-Nova/Proxima\ Nova\ Font.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Meslo LG Bold';
+    src: url('/assets/fonts/MesloLG/MesloLGMDZ-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Ogg;
+    src: url('/assets/fonts/ogg/Ogg-Regular-BF646c18fc465e5.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Nordin';
+    src: url('/assets/fonts/nordin/Nordin\ Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('/assets/fonts/Proxima-Nova/Proxima\ Nova\ Font.otf') format('opentype');
+}
