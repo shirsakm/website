@@ -1,5 +1,6 @@
-title: Cherry Blossom
-description: A theme for Jekyll inspired by Cactus Dark for Hexo.
+title: My website
+description: A website for me
+url: https://shirsak.is-a.dev/
 
 plugins:
   - jekyll-sitemap
