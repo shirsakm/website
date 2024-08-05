@@ -1,0 +1,166 @@
+@font-face {
+    font-family: 'Georgia';
+    src: url('/assets/fonts/georgia/georgia.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('/assets/fonts/Roboto-Slab/RobotoSlab-VariableFont_wght.ttf') format('truetype');
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #8a0707;
+}
+
+.envelope {
+    position: relative;
+    cursor: pointer;
+}
+
+.back {
+    position: relative;
+    width: 300px;
+    height: 230px;
+    background: #d91438;
+
+}
+
+.front {
+    position: absolute;
+    border-right: 180px solid #f2527d;
+    border-top: 130px solid transparent;
+    border-bottom: 100px solid transparent;
+    height: 0;
+    width: 0;
+    top: 0;
+    left: 120px;
+    z-index: 3;
+}
+
+.front:before {
+    content: "";
+    position: absolute;
+    border-left: 180px solid #f2527d;
+    border-top: 130px solid transparent;
+    border-bottom: 100px solid transparent;
+    height: 0;
+    width: 0;
+    top: -130px;
+    left: -120px;
+}
+
+.front:after {
+    content: '';
+    position: absolute;
+    border-bottom: 120px solid #d92b4b;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    height: 0;
+    width: 0;
+    top: -20px;
+    left: -120px;
+}
+
+.top {
+    position: absolute;
+    border-top: 120px solid #d91438;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    height: 0;
+    width: 0;
+    top: 0;
+    transform-origin: top;
+    transition: 0.4s;
+}
+
+/* .envelope:hover .top{
+    transform: rotateX(160deg);
+} */
+.letter {
+    position: absolute;
+    background: white;
+    width: 280px;
+    height: 180px;
+    top: 10px;
+    left: 10px;
+    transition: 0.2s;
+}
+
+/* .envelope:hover .letter {
+    transform: translateY(-100px);
+    z-index: 4;
+} */
+.text1 {
+    position: top;
+    color: white;
+    font-family: sans-serif;
+    top: -60px;
+}
+
+.text {
+    text-align: center;
+    font-size: 11px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 15px;
+    font-weight: bold;
+    color: black;
+    position: relative;
+    top: -20px;
+    left: 20px;
+}
+
+/*---heart -----*/
+.heart {
+    background-color: red;
+    height: 70px;
+    width: 70px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    transform: rotate(-45deg);
+    box-shadow: 5px 10px 90px red;
+    animation: loveletter 0.8s linear infinite;
+}
+
+@keyframes loveletter {
+    0% {
+        transform: rotate(-45deg) scale(1.0);
+    }
+
+    70% {
+        transform: rotate(-45deg) scale(0.5);
+    }
+
+    100% {
+        transform: rotate(-45deg) scale(1.0);
+    }
+
+}
+
+.heart:before {
+    content: '';
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background-color: red;
+    top: -43px;
+    border-radius: 50px;
+}
+
+.heart:after {
+    content: '';
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background-color: red;
+    right: -43px;
+    border-radius: 50px;
+}
+
+.no-flip {
+    transition-property: none !important
+}

@@ -1,0 +1,190 @@
+@font-face {
+    font-family: Impacted;
+    src: url('/assets/fonts/Impacted/Impacted.ttf') format('truetype');
+}
+
+body {
+    font-family: Impacted;
+    background: #f2f2eb;
+}
+
+.animation-box {
+    width: 75%;
+    height: 27.5rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.first-text {
+    font-size: 4.0rem;
+    color: #d91438;
+    position: absolute;
+    left: 6rem;
+    top: 6rem;
+    opacity: 0;
+    animation-name: loveletter1;
+    animation-duration: 8s;
+}
+
+.second-text {
+    font-size: 4.0rem;
+    color: #d91438;
+    position: absolute;
+    left: 5rem;
+    top: 10rem;
+    opacity: 0;
+    animation-name: loveletter2;
+    animation-duration: 8s;
+    animation-delay: 8s;
+}
+
+.third-text {
+    font-size: 4.0rem;
+    color: #d91438;
+    position: absolute;
+    left: 6rem;
+    top: 6rem;
+    opacity: 0;
+    animation-name: loveletter3;
+    animation-duration: 7s;
+    animation-delay: 16s;
+}
+
+.fourth-text {
+    font-size: 4.0rem;
+    color: #d91438;
+    position: absolute;
+    left: 5rem;
+    top: 15rem;
+    opacity: 0;
+    animation-name: loveletter4;
+    animation-duration: 7s;
+    animation-delay: 23s;
+}
+
+.fifth-text {
+    font-size: 4.0rem;
+    color: #d91438;
+    position: absolute;
+    left: 6rem;
+    top: 5rem;
+    opacity: 0;
+    animation-name: loveletter5;
+    animation-duration: 10s;
+    animation-delay: 30s;
+}
+
+.sixth-text {
+    font-size: 4.0rem;
+    color: #d91438;
+    position: absolute;
+    left: 5rem;
+    top: 10rem;
+    opacity: 0;
+    animation-name: loveletter6;
+    animation-duration: 15s;
+    animation-delay: 40s;
+}
+
+@keyframes loveletter1 {
+    0% {
+        top: -5rem;
+        opacity: 0;
+    }
+
+    75% {
+        top: 40%;
+        opacity: 1;
+    }
+
+    100% {
+        top: -5rem;
+        opacity: 0;
+    }
+}
+
+@keyframes loveletter2 {
+    0% {
+        left: -4rem;
+        opacity: 0;
+    }
+
+    75% {
+        left: 15%;
+        opacity: 1;
+    }
+
+    100% {
+        left: -4rem;
+        opacity: 0;
+    }
+}
+
+@keyframes loveletter3 {
+    0% {
+        top: -5rem;
+        opacity: 0;
+    }
+
+    75% {
+        top: 40%;
+        opacity: 1;
+    }
+
+    100% {
+        top: -5rem;
+        opacity: 0;
+    }
+}
+
+@keyframes loveletter4 {
+    0% {
+        left: -4rem;
+        opacity: 0;
+    }
+
+    75% {
+        left: 15%;
+        opacity: 1;
+    }
+
+    100% {
+        left: -4rem;
+        opacity: 0;
+    }
+}
+
+@keyframes loveletter5 {
+    0% {
+        top: -5rem;
+        opacity: 0;
+    }
+
+    75% {
+        top: 40%;
+        opacity: 1;
+    }
+
+    100% {
+        top: -5rem;
+        opacity: 0;
+    }
+}
+
+@keyframes loveletter6 {
+    0% {
+        left: -4rem;
+        opacity: 0;
+    }
+
+    75% {
+        left: 15%;
+        opacity: 1;
+    }
+
+    100% {
+        left: -4rem;
+        opacity: 0;
+    }
+}
