@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
 @font-face {
     font-family: 'Aramis';
@@ -63,6 +62,11 @@
 @font-face {
     font-family: 'Proxima Nova';
     src: url('/assets/fonts/Proxima-Nova/Proxima\ Nova\ Font.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('/assets/fonts/Roboto-Slab/RobotoSlab-VariableFont_wght.ttf') format('truetype');
 }
 
 @font-face {

@@ -15,3 +15,6 @@ group :jekyll_plugins do
     gem "jekyll-seo-tag" # adds SEO tags to site head
     gem "jekyll-redirect-from" # adds redirects to pages
 end
+
+# coderay syntax highlighter
+gem "coderay", "~> 1.1"
